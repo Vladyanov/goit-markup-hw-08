@@ -469,8 +469,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 .backdrop {
@@ -617,4 +617,51 @@ body {
 
 .modal-form__submit {
   align-self: center;
+}
+
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .features__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .features__item {
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc(25% - 30px);
+  }
+}
+.features__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: var(--section-bg);
+  border-radius: 4px;
+  height: 120px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.features__text {
+  line-height: 1.71;
 }/*# sourceMappingURL=main.css.map */
