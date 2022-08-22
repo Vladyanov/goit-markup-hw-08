@@ -7,7 +7,9 @@
 .modal-form__text {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+
+  // line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
 
@@ -30,7 +32,7 @@
   border-radius: 4px;
   padding-left: 42px;
 
-  font-style: 16px;
+  font-size: 16px;
   color: var(--secondary-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -90,6 +92,7 @@
   justify-content: center;
   margin-bottom: 30px;
   line-height: 1.1;
+  font-size: 12px;
 
   &::before {
     content: '';
@@ -113,6 +116,16 @@
     .modal-form__check:focus + & {
       outline: 1px solid var(--secondary-color);
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__text {
+    line-height: 1.15;
+  }
+
+  .modal-form__check-desc {
+    font-size: 14px;
   }
 }
 

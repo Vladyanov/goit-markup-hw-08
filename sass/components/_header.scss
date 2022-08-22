@@ -110,6 +110,8 @@
     padding: 10px;
 
     font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
@@ -126,6 +128,9 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+}
+
 /* ======= DESCTOP ======== */
 @media screen and (min-width: 1200px) {
   .contacts {
@@ -134,5 +139,20 @@
 
   .contacts__item:first-child {
     margin-right: 50px;
+  }
+
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  .contacts__icon_email {
+    width: 16px;
+    height: 12px;
+  }
+
+  .contacts__icon_phone {
+    width: 10px;
+    height: 16px;
   }
 }
