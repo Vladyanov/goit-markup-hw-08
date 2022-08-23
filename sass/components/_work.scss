@@ -1,6 +1,11 @@
 /* ========== section WORK чем мы занимаемсяа =========== */
-.section_work-correct-padding {
+
+.section_work-correct-display {
   padding-top: 0;
+
+  @media only screen and (max-width: 1199.9px) {
+    display: none;
+  }
 }
 
 .work-list {
