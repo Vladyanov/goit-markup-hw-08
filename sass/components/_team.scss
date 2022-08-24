@@ -2,9 +2,29 @@
   background-color: var(--section-bg);
 }
 
-// .team-list {
-//   display: flex;
-// }
+@media screen and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .team-list__item {
+    flex-basis: calc(100% / 2 - 30px / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    flex-basis: calc(100% / 4 - 3 * 30px / 4);
+  }
+}
 
 .team-list__item {
   background-color: var(--color-text-on-dark);

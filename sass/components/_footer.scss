@@ -3,14 +3,80 @@
   padding: 60px 0;
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
-.footer-box {
-  margin-right: 70px;
-  width: 231px;
+.footer__logo {
+  display: block;
+  margin-bottom: 30px;
+  margin-right: 0;
+
+  color: var(--color-text-on-dark);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    text-align: center;
+  }
+
+  .footer-box {
+    margin-bottom: 60px; //mobile tablet
+  }
+
+  .address-list__item {
+    text-align: center;
+  }
+
+  .join-us {
+    margin-bottom: 60px; //mobile tablet
+  }
+
+  .subscribe {
+    width: 100%;
+  }
+
+  .input-label__subscribe {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .footer__text {
+    text-align: center; //mobile tablet
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .footer-box {
+    margin-right: 70px;
+    width: 231px;
+  }
+
+  .join-us {
+    margin-right: 93px;
+  }
+
+  .footer-form {
+    display: flex;
+  }
+
+  .input-label__subscribe {
+    margin-right: 8px;
+    width: 358px;
+  }
 }
 
 .address-list__item:not(:last-child) {
@@ -32,13 +98,10 @@
   color: var(--address-color);
 }
 
-.join-us {
-  margin-right: 93px;
-}
-
 .footer__text {
   margin-bottom: 20px;
 
+  // text-align: center; //mobile tablet
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -54,10 +117,11 @@
   color: var(--color-text-on-dark);
 }
 
-.input-subscribe {
-  margin-right: 8px;
+.input-label__subscribe {
+  display: block;
+  // margin-right: 8px;
   padding-left: 16px;
-  width: 358px;
+  // width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -68,9 +132,10 @@
 }
 
 .input-subscribe-btn {
-  display: inline-flex;
+  display: flex; //inline-flex desctop
   align-items: center;
   justify-content: center;
+  margin: 0 auto; //mobile tablet
 
   @extend %button;
 }
