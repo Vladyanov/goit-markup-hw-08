@@ -22,11 +22,19 @@
 }
 
 .overlay__text {
-  padding: 63px 24px;
+  padding: 77px 24px;
 
   font-size: 18px;
   line-height: 1.56;
   color: var(--color-text-on-dark);
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 /* ====== /OVERLAY ======== */
