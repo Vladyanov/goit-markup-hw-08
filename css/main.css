@@ -982,6 +982,11 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .portfolio-gallery__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .portfolio-gallery__title {
   margin-bottom: 4px;
 }
