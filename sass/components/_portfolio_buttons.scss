@@ -1,12 +1,13 @@
 /* ============== BUTTONS КНОПКИ ПОРТФОЛИО =============== */
 .portfolio-buttons-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 8px;
   margin-bottom: 50px;
-}
 
-.portfolio-buttons-list__item:not(:last-child) {
-  margin-right: 8px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .portfolio-buttons-list__button {
